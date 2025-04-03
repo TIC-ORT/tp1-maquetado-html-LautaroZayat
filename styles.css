@@ -1,7 +1,13 @@
 .franja {
-    width: 14vh;
-    height: 14vh;
-    color: orange; 
-    background-color: black;
+    width: 164vh;
+    height: 25vh;
+    color: white; 
+    background-color: orange;
 
+}
+
+.cuadrado-header {
+    width: 14vh;
+    height: 14vh; 
+    background-color: orangered;
 }
