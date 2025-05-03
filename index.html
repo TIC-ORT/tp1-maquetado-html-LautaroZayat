@@ -150,6 +150,110 @@
       height: 100%;
       background-color: #ccc;
     }
+
+    .contenido {
+      display: flex;
+      padding: 20px;
+      gap: 20px;
+      background-color: #52555c;
+    }
+
+    .barra-lateral {
+      width: 25%;
+      background-color: #3e4249;
+      padding: 20px;
+    }
+
+    .item-lateral {
+      margin-bottom: 15px;
+      height: 10px;
+      background-color: #fff;
+      opacity: 0.3;
+    }
+
+    .item-lateral-activo {
+      height: 15px;
+      margin: 20px 0;
+      background-color: #ff8671;
+      opacity: 1;
+    }
+
+    .contenido-principal {
+      width: 65%;
+    }
+
+    .reproductor-video {
+      width: 100%;
+      aspect-ratio: 16/6;
+      background-color: #ff8671;
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .boton-play {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      border-top: 30px solid transparent;
+      border-left: 50px solid #fff;
+      border-bottom: 30px solid transparent;
+    }
+
+    .flechas-navegacion {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+      transform: translateY(-50%);
+    }
+
+    .flecha {
+      width: 0;
+      height: 0;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+    }
+
+    .flecha-izquierda {
+      border-right: 30px solid #fff;
+    }
+
+    .flecha-derecha {
+      border-left: 30px solid #fff;
+    }
+
+    .miniaturas {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .miniatura {
+      width: 30%;
+      aspect-ratio: 16/9;
+      background-color: #3e4249;
+    }
+
+    .info-video {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .columna-info {
+      width: 30%;
+    }
+
+    .fila-info {
+      height: 8px;
+      background-color: #999;
+      margin-bottom: 10px;
+      width: 90%;
+    }
   </style>
 </head>
 <body>
@@ -194,6 +298,55 @@
     </div>
     <div class="input-busqueda">
       <div class="busqueda-gris"></div>
+    </div>
+  </div>
+
+  <div class="contenido">
+    <div class="barra-lateral">
+      <div class="item-lateral"></div>
+      <div class="item-lateral"></div>
+      <div class="item-lateral-activo"></div>
+      <div class="item-lateral"></div>
+      <div class="item-lateral"></div>
+      <div class="item-lateral"></div>
+      <div class="item-lateral"></div>
+      <div class="item-lateral"></div>
+      <div class="item-lateral"></div>
+      <div class="item-lateral"></div>
+    </div>
+
+    <div class="contenido-principal">
+      <div class="reproductor-video">
+        <div class="boton-play"></div>
+        <div class="flechas-navegacion">
+          <div class="flecha flecha-izquierda"></div>
+          <div class="flecha flecha-derecha"></div>
+        </div>
+      </div>
+
+      <div class="miniaturas">
+        <div class="miniatura"></div>
+        <div class="miniatura"></div>
+        <div class="miniatura"></div>
+      </div>
+
+      <div class="info-video">
+        <div class="columna-info">
+          <div class="fila-info"></div>
+          <div class="fila-info"></div>
+          <div class="fila-info"></div>
+        </div>
+        <div class="columna-info">
+          <div class="fila-info"></div>
+          <div class="fila-info"></div>
+          <div class="fila-info"></div>
+        </div>
+        <div class="columna-info">
+          <div class="fila-info"></div>
+          <div class="fila-info"></div>
+          <div class="fila-info"></div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
